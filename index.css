@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: var(--bg);
+}
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --red:red;
+    --yellow: yellow;
+    --gray: gray;
+    --black: black;
+    --white: white;
+    --bg: rgb(64, 60, 78);
+}
+
+.light_off {
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 500px;
+}
+.light_on {
+    display: none;
+    margin: auto;
+    height: 350px;
+    width: 500px;
+}
+.light_off, .light_on {
+    margin-left: -90px;
+
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+}
+
+.btns {
+    padding-top: 10px;
+    margin-left: -90px;
+}
+
+.button-container {
+    
+    border: 2px solid var(--black);
+    border-radius: 30px;
+}
+.btn_on, .btn_off {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 0px solid var(--black);
+    border-radius: 30px;
+}
+
+.btn_on:hover, .btn_off:hover {
+    background: var(--gray);
+    transition: 2s;
+}
+
+@media (max-width: 768px) {
+.container {
+    width: 95%;
+}
+}
+
+
+
+
